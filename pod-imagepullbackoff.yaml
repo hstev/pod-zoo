@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-imagepull
+spec:
+  containers:
+  - name: fake-container
+    image: registry.example.com/this-image-doesnt-existsss:latest
+    command: ["sleep", "3600"]

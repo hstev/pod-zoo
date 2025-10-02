@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-creating
+spec:
+  containers:
+  - name: ubuntu-big
+    image: ubuntu:20.04
+    command: ["sleep", "3600"]
